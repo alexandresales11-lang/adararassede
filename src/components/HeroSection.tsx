@@ -109,8 +109,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Core Value Proposition */}
           <div className="lg:col-span-7 space-y-6">
-            {/* Unboxed Metadata Header (Zero-Pill Discipline) */}
-            <div className="flex items-center gap-2 text-xs font-semibold text-amber-400 tracking-wider">
+            {/* Unboxed Metadata Header (Zero-Pill Discipline) - Hidden on Mobile */}
+            <div className="hidden sm:flex items-center gap-2 text-xs font-semibold text-amber-400 tracking-wider">
               <span>ASSEMBLEIA DE DEUS</span>
               <span aria-hidden="true" className="text-white/30">·</span>
               <span>MINISTÉRIO ARARAS SEDE</span>
