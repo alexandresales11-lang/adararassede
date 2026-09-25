@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Navigation, Car, Baby, Accessibility, Clock, ExternalLink, Copy, Check } from 'lucide-react';
-import { CHURCH_INFO, WEEKLY_SCHEDULE } from '../data/churchData';
+import { CHURCH_INFO, WEEKLY_SCHEDULE, CHURCH_IMAGES } from '../data/churchData';
 
 export const LocalizacaoSection: React.FC = () => {
   const [addressCopied, setAddressCopied] = useState(false);
@@ -157,7 +157,7 @@ export const LocalizacaoSection: React.FC = () => {
             {/* Visual Sanctuary Photo */}
             <div className="relative h-64 sm:h-72 w-full bg-slate-900">
               <img
-                src="/src/assets/images/sanctuary_altar_bible_1790360454640.jpg"
+                src={CHURCH_IMAGES.sanctuary}
                 alt="Altar e Templo da AD Araras Sede"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover filter brightness-[0.8] contrast-[1.05]"

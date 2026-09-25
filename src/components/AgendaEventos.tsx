@@ -4,7 +4,7 @@ import {
   ChevronRight, Check, Sparkles, Filter, Ticket, X, User, Phone, 
   ExternalLink, ArrowUpRight 
 } from 'lucide-react';
-import { UPCOMING_EVENTS, WEEKLY_SCHEDULE, CHURCH_INFO } from '../data/churchData';
+import { UPCOMING_EVENTS, WEEKLY_SCHEDULE, CHURCH_INFO, CHURCH_IMAGES } from '../data/churchData';
 import { ChurchEvent } from '../types/church';
 
 export const AgendaEventos: React.FC = () => {
@@ -168,7 +168,7 @@ export const AgendaEventos: React.FC = () => {
                 {/* Banner Thumbnail */}
                 <div className="relative h-44 w-full bg-slate-900 overflow-hidden">
                   <img
-                    src={evt.bannerImage || '/src/assets/images/hero_church_worship_1790360423474.jpg'}
+                    src={evt.bannerImage || CHURCH_IMAGES.hero}
                     alt={evt.title}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

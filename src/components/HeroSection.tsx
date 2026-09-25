@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Play, Calendar, MapPin, Clock, ArrowRight, ShieldCheck } from 'lucide-react';
-import { WEEKLY_SCHEDULE, CHURCH_INFO } from '../data/churchData';
+import { WEEKLY_SCHEDULE, CHURCH_INFO, CHURCH_IMAGES } from '../data/churchData';
 
 interface HeroSectionProps {
   onNavigate: (sectionId: string) => void;
@@ -94,7 +94,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
       {/* Background Hero Photography with Scrim Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_church_worship_1790360423474.jpg"
+          src={CHURCH_IMAGES.hero}
           alt="Momento de adoração no Templo Sede da AD Araras"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover object-center filter brightness-[0.45] contrast-[1.05]"

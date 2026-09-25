@@ -1,4 +1,15 @@
 import { ChurchEvent, LiveBroadcast, Ministry, PrayerRequest } from '../types/church';
+import heroChurchWorship from '../assets/images/hero_church_worship_1790360423474.jpg';
+import eventFamilyService from '../assets/images/event_family_service_1790360435338.jpg';
+import youthWorshipNight from '../assets/images/youth_worship_night_1790360444403.jpg';
+import sanctuaryAltarBible from '../assets/images/sanctuary_altar_bible_1790360454640.jpg';
+
+export const CHURCH_IMAGES = {
+  hero: heroChurchWorship,
+  family: eventFamilyService,
+  youth: youthWorshipNight,
+  sanctuary: sanctuaryAltarBible,
+};
 
 export const CHURCH_INFO = {
   name: 'AD Araras Sede',
@@ -67,7 +78,7 @@ export const INITIAL_BROADCASTS: LiveBroadcast[] = [
     preacher: 'Pr. Presidente',
     theme: 'Cura, Salvação e Esperança Renovada',
     status: 'live',
-    thumbnail: '/src/assets/images/hero_church_worship_1790360423474.jpg',
+    thumbnail: heroChurchWorship,
     date: 'Hoje',
     views: 342,
     duration: 'Ao Vivo',
@@ -87,7 +98,7 @@ export const INITIAL_BROADCASTS: LiveBroadcast[] = [
     preacher: 'Pr. Convidado',
     theme: 'Milagres e Livramento',
     status: 'recorded',
-    thumbnail: '/src/assets/images/sanctuary_altar_bible_1790360454640.jpg',
+    thumbnail: sanctuaryAltarBible,
     date: 'Quinta-feira passada',
     views: 1140,
     duration: '1h 38m',
@@ -107,7 +118,7 @@ export const INITIAL_BROADCASTS: LiveBroadcast[] = [
     preacher: 'Líder dos Jovens',
     theme: 'Chamados para Fazer a Diferença',
     status: 'recorded',
-    thumbnail: '/src/assets/images/youth_worship_night_1790360444403.jpg',
+    thumbnail: youthWorshipNight,
     date: 'Sábado passado',
     views: 980,
     duration: '1h 45m',
@@ -127,7 +138,7 @@ export const INITIAL_BROADCASTS: LiveBroadcast[] = [
     preacher: 'Pastor de Ensino',
     theme: 'A Doutrina dos Apóstolos',
     status: 'recorded',
-    thumbnail: '/src/assets/images/event_family_service_1790360435338.jpg',
+    thumbnail: eventFamilyService,
     date: 'Terça-feira passada',
     views: 760,
     duration: '1h 22m',
@@ -155,7 +166,7 @@ export const UPCOMING_EVENTS: ChurchEvent[] = [
     location: 'Templo Sede — Rua Santos Dumont, 492, Araras - SP',
     speaker: 'Preletores Nacionais e Missionários de Campo',
     theme: 'Até aos Confins da Terra (Atos 1:8)',
-    bannerImage: '/src/assets/images/hero_church_worship_1790360423474.jpg',
+    bannerImage: heroChurchWorship,
     isSpecial: true,
     requiresRegistration: true
   },
@@ -170,7 +181,7 @@ export const UPCOMING_EVENTS: ChurchEvent[] = [
     location: 'Templo Sede — Nave Principal',
     speaker: 'Liderança Conectados & Banda Convidada',
     theme: 'Inabaláveis',
-    bannerImage: '/src/assets/images/youth_worship_night_1790360444403.jpg',
+    bannerImage: youthWorshipNight,
     isSpecial: true,
     requiresRegistration: true
   },
@@ -185,7 +196,7 @@ export const UPCOMING_EVENTS: ChurchEvent[] = [
     location: 'Salão Social AD Araras Sede',
     speaker: 'Missionária Convidada',
     theme: 'Mulheres que Oram, Casas que Prosperam',
-    bannerImage: '/src/assets/images/event_family_service_1790360435338.jpg',
+    bannerImage: eventFamilyService,
     isSpecial: false,
     requiresRegistration: true
   },
@@ -200,7 +211,7 @@ export const UPCOMING_EVENTS: ChurchEvent[] = [
     location: 'Templo Sede — Rua Santos Dumont, 492',
     speaker: 'Corpo Pastoral AD Araras Sede',
     theme: 'Vigiai e Orai',
-    bannerImage: '/src/assets/images/sanctuary_altar_bible_1790360454640.jpg',
+    bannerImage: sanctuaryAltarBible,
     isSpecial: true,
     requiresRegistration: false
   },
@@ -215,7 +226,7 @@ export const UPCOMING_EVENTS: ChurchEvent[] = [
     location: 'Batistério do Templo Sede',
     speaker: 'Pr. Presidente',
     theme: 'Nova Vida em Cristo',
-    bannerImage: '/src/assets/images/hero_church_worship_1790360423474.jpg',
+    bannerImage: heroChurchWorship,
     isSpecial: true,
     requiresRegistration: false
   },
@@ -230,7 +241,7 @@ export const UPCOMING_EVENTS: ChurchEvent[] = [
     location: 'Espaço Kids AD Araras',
     speaker: 'Tias do Departamento Infantil',
     theme: 'Crianças aos Pés de Jesus',
-    bannerImage: '/src/assets/images/event_family_service_1790360435338.jpg',
+    bannerImage: eventFamilyService,
     isSpecial: false,
     requiresRegistration: true
   }
@@ -244,7 +255,7 @@ export const MINISTRIES_DATA: Ministry[] = [
     description: 'Movimento focado em integrar os jovens através do discipulado bíblico, cultos dinâmicos aos sábados, conferências e projetos de impacto social em Araras.',
     leader: 'Coordenação da Juventude',
     meetingTime: 'Todo Sábado às 19:30H',
-    image: '/src/assets/images/youth_worship_night_1790360444403.jpg',
+    image: youthWorshipNight,
     color: '#f59e0b'
   },
   {
@@ -254,7 +265,7 @@ export const MINISTRIES_DATA: Ministry[] = [
     description: 'Apoio aos casais, pais e filhos com palestras, jantares temáticos, aconselhamento conjugal e o grande Culto da Família aos domingos.',
     leader: 'Pr. e Pastora da Família',
     meetingTime: 'Culto da Família todo Domingo às 19:00H',
-    image: '/src/assets/images/event_family_service_1790360435338.jpg',
+    image: eventFamilyService,
     color: '#d97706'
   },
   {
@@ -264,7 +275,7 @@ export const MINISTRIES_DATA: Ministry[] = [
     description: 'Equipe de músicos, cantores, sonoplastas e operadores de transmissão ao vivo que conduzem a igreja em atmosfera de adoração profunda.',
     leader: 'Ministério de Música AD Araras',
     meetingTime: 'Ensaios aos Sábados 16:30H',
-    image: '/src/assets/images/hero_church_worship_1790360423474.jpg',
+    image: heroChurchWorship,
     color: '#ea580c'
   },
   {
@@ -274,7 +285,7 @@ export const MINISTRIES_DATA: Ministry[] = [
     description: 'Salas climatizadas, monitoria dedicada durante todos os cultos oficiais e Escola Bíblica Dominical adaptada para cada faixa etária.',
     leader: 'Coordenação Pedagógica Kids',
     meetingTime: 'Durante todos os cultos oficiais e Domingo 09:00H',
-    image: '/src/assets/images/sanctuary_altar_bible_1790360454640.jpg',
+    image: sanctuaryAltarBible,
     color: '#f97316'
   }
 ];
