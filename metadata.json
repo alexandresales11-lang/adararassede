@@ -1,0 +1,6 @@
+{
+  "name": "AD Araras Sede - Igreja e Transmissões",
+  "description": "Portal oficial da Igreja Assembleia de Deus Ministério Araras Sede. Transmissão ao vivo, agenda interativa de cultos e eventos, ministérios e pedidos de oração.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
